@@ -41,3 +41,6 @@ except IndexError:
 fib_iterable = Fibonacci(8)
 for number in fib_iterable:
     print(number)
+    
+fib_list = [f for f in fib_iterable ]
+print(fib_list)      #  outputs [13, 21, 34, 55, 89, 144, 233, 377] , showing that my iterable just kept going! 

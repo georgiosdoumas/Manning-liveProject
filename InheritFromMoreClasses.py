@@ -15,11 +15,11 @@ class Movements:
         self.speed = swimming_speed
         self.depth = swim_depth
         print(f"swimming in {self.speed} m/s in depth of {self.depth} m")
-    def fly(self, height, flying_speed):
+    def fly(self, height=None, flying_speed=None):
         self.altitude = height
         self.velocity = flying_speed
         print(f"flying at {self.altitude} m with {self.velocity} m/s")
-    def hop(self, jump):
+    def hop(self, jump=None):
         self.distance = jump
         print(f" hopping {self.distance} m long")
     
@@ -82,4 +82,3 @@ print(frog01)
 # I do not want the frog to be able to walk,
 # and this is the problem with my desing (having 1 big Movement class with many methods)
 frog01.walk(5)  
-
